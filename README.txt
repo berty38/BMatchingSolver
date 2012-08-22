@@ -22,7 +22,8 @@ B. Huang and T. Jebara. Eleventh International Conference on Artificial Intellig
 Compile the software by using the makefile in the "Release" directory, 
 which will create a binary BMatchingSolver program. Or if you wish to use 
 the static methods in the BMatchingLibrary as a dynamic library, use the
-makefile in "Shared Library", which creates a dylib file.
+makefile in "Shared Library", which creates a dylib file. Alternatively, this 
+repository is an Eclipse project, which can be imported into your workspace.
 
 See the "html" directory for documentation. 
 
