@@ -3,9 +3,21 @@ propagation. It is provided as-is, with no warranty, and can be freely
 used for scientific research. Please contact me at bert@cs.columbia.edu if 
 you want to use it for commercial reasons. 
 
-If you use this code in research for publication, please cite the paper 
-"Loopy Belief Propagation for Bipartite Maximum Weight b-Matching" by 
-Bert Huang and Tony Jebara.
+If you use this code in research for publication, please cite the papers:
+
+Fast b-Matching via Sufficient Selection Belief Propagation
+B. Huang and T. Jebara. Fourteenth International Conference on Artificial Intelligence and Statistics (AISTATS) 2011
+
+and
+
+Loopy Belief Propagation for Bipartite Maximum Weight b-Matching.
+B. Huang and T. Jebara. Eleventh International Conference on Artificial Intelligence and Statistics (AISTATS) 2007,
+
+
+
+
+
+
 
 Compile the software by using the makefile in the "Release" directory, 
 which will create a binary BMatchingSolver program. Or if you wish to use 
@@ -14,7 +26,7 @@ makefile in "Shared Library", which creates a dylib file.
 
 See the "html" directory for documentation. 
 
-Please send questions, comments to bert@cs.columbia.edu. 
+Please send questions, comments to bert@cs.umd.edu. 
 
 See shell script examples/runExamples.sh for how to call the command line tool, and see the matlab script tester.m for how to call the matlab functions.
 
@@ -41,8 +53,8 @@ of nodes in the first bipartition.
 
 A number of matlab toolbox functions are in the matlab directory:
 
-bdmatch_augment.m - create an augmented weight matrix for bd-matching using
-                    auxiliary nodes
+bdmatch_augment.m - create an augmented weight matrix for bd-matching (degree-
+                    constrained subgraph) using auxiliary nodes
 BMatchingSolver.cpp - mex c++ file for direct matlab interface
 BMatchingSolver.mexmaci64 - 64-bit mac binary for mex version
 BMatchingSolverCmd.m - command line wrapper that calls the CLI BMatchingSolver
