@@ -195,7 +195,7 @@ int main(int argc, char ** argv) {
 			weightType = atoi(optarg);
 			break;
 		case 'i':
-			cacheSize = atoi(optarg);
+			maxIter = atoi(optarg);
 			break;
 		case 'D':
 			dimensions = atoi(optarg);
