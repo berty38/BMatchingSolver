@@ -235,6 +235,9 @@ int main(int argc, char ** argv) {
 			(n == 0)) {
 		cout << "Invalid options. Exiting..." << endl;
 		return -1;
+	} else if (binary == 1) {
+		cout << "Error: Binary input files are unsupported." << endl;
+		return -1;
 	}
 
 	SparseMatrix<bool> * solution = 0;
