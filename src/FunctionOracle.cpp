@@ -20,8 +20,7 @@ FunctionOracle::~FunctionOracle() {
 }
 
 double FunctionOracle::computeWeight(int row, int col) {
-	if (!selfLoops && row == col ||
-			row >= size || col >= size)
+	if ((!selfLoops && row == col) || row >= size || col >= size)
 		return -INFINITY;
 	return weightFunction->getWeight(data[row], data[col], dimension);
 }

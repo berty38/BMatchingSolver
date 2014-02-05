@@ -16,7 +16,7 @@ BipartiteFunctionOracle::BipartiteFunctionOracle(double **dataX, double **dataY,
 	rows = r;
 	cols = c;
 	dimension = d;
-	setCacheSize(max(rows, cols));
+	setCacheSize(std::max(rows, cols));
 }
 
 BipartiteFunctionOracle::~BipartiteFunctionOracle() {
@@ -27,12 +27,13 @@ int BipartiteFunctionOracle::getSize() {
 }
 
 double BipartiteFunctionOracle::computeWeight(int row, int col) {
-	if (row < rows && col < rows ||
-			row >= rows && col >= rows ||
-			row - rows >= cols || col - rows >= cols) {
+	if ((row < rows && col < rows) ||
+		(row >= rows && col >= rows) ||
+		row - rows >= cols || col - rows >= cols) {
 		return -INFINITY;
-	} else if (row < rows)
+	} else if (row < rows) {
 		return weightFunction->getWeight(X[row], Y[col - rows], dimension);
+	}
 	return weightFunction->getWeight(X[col], Y[row-rows], dimension);
 }
 

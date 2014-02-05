@@ -40,8 +40,6 @@ private:
 	int rows;
 	int cols;
 	double **K;
-	int **index;
-	double **cache;
 };
 
 #endif /* KERNELMATRIXORACLE_H_ */

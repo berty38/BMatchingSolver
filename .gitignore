@@ -1,0 +1,5 @@
+*.o
+Release/BMatchingSolver
+Release/src/*.d
+Shared\ Library/src/*.d
+Shared\ Library/libBMatchingSolver.*

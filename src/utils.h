@@ -10,8 +10,6 @@
 #ifndef UTILS_H_
 #define UTILS_H_
 
-using namespace std;
-
 namespace utils {
 
 	// Takes a file and reads the input as a matrix of values

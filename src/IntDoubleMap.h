@@ -59,9 +59,7 @@ private:
 	double * value;
 	bool * filled;
 	int size;
-	int lastIndex;
 	int tableSize;
-	int maxSize;
 	double hits;
 	double misses;
 
