@@ -12,6 +12,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib>
 #include "BMatchingLibrary.h"
 #include "utils.h"
 #include "SparseMatrix.h"
