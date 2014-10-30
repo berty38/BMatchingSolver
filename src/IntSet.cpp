@@ -7,6 +7,7 @@
 
 #include "IntSet.h"
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 IntSet::IntSet() {

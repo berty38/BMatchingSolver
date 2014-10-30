@@ -10,6 +10,7 @@
 #include <math.h>
 #include <time.h>
 #include <pthread.h>
+#include <string.h>
 #include "BeliefPropagator.h"
 #include "BMatchingSolution.h"
 using namespace std;

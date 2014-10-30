@@ -27,12 +27,13 @@ int BipartiteMatrixOracle::getSize() {
 }
 
 double BipartiteMatrixOracle::computeWeight(int row, int col) {
-	if (row < rows && col < rows ||
-			row >= rows && col >= rows ||
-			row - rows >= cols || col - rows >= cols)
+	if ((row < rows && col < rows) ||
+		(row >= rows && col >= rows) ||
+		row - rows >= cols || col - rows >= cols) {
 		return -INFINITY;
-	else if (row < rows)
+	}else if (row < rows) {
 		return K[row][col - rows];
+	}
 	return K[col][row - rows];
 }
 
